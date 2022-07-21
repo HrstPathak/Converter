@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/CSS/Mass.css" />
+
+    <title>Mass Converter</title>
+  </head>
+  <body>
+    <div class="head">CONVERTER</div>
+    <div class="outer_container">
+      <div class="inner_container">
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <i class="fas fa-weight-hanging"></i>
+
+            <a id="navbarDate" class="navbar-brand"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas open-nav offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  M E N U
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body offcanvas-dark bg-dark">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/"
+                      ><i class="fas fa-home"></i>Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/BMI_calculator">
+                      <i class="fas fa-weight"></i>
+                      BMI Calculator</a
+                    >
+                  </li>
+                  <li class="nav-item bg-info rounded text-dark">
+                    <a class="nav-link" href="/MassConverter"
+                      ><i class="fas fa-weight-hanging"></i>Mass Converter</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/LengthConverter"
+                      ><i class="fas fa-ruler-vertical"></i>Length Converter</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/TemperatureConverter"
+                      ><i class="fas fa-temperature-high"></i>Temperature
+                      Converter</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header">MASS</div>
+        <div class="input_container">
+          <input id="input1" type="text" placeholder="00" />
+          <span id="unit_div1" class="unit_div">---</span>
+          <div class="selector_container">
+            <select
+              id="Select_1"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option id="option_1" class="option_1" selected>Units</option>
+              <option class="option_1" value="1">Gram g</option>
+              <option class="option_1" value="2">Kilogram Kg</option>
+              <option class="option_1" value="3">Tonne T</option>
+              <option class="option_1" value="4">Pound lb</option>
+            </select>
+          </div>
+        </div>
+        <div class="output_container">
+          <div class="output_container_inner">
+            <input id="input2" type="text" placeholder="00" readonly />
+          </div>
+          <span id="unit_div2" class="unit_div">---</span>
+
+          <div class="output_selector_container">
+            <select
+              id="Select_2"
+              class="form-select"
+              aria-label="Default select example"
+            >
+              <option class="option_2" selected>Units</option>
+              <option class="option_2" value="1">Gram g</option>
+              <option class="option_2" value="2">Kilogram Kg</option>
+              <option class="option_2" value="3">Tonne T</option>
+              <option class="option_2" value="4">Pound lb</option>
+            </select>
+          </div>
+        </div>
+        <div class="button_div">
+          <button onclick="Convert()">
+            <i class="fas fa-exchange-alt"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="JS/Mass.js"></script>
+</html>

@@ -1,0 +1,151 @@
+body {
+  background: linear-gradient(to right, #ee9ca7, #ffdde1);
+  width: 100vw;
+  height: 100vh;
+}
+.outer_container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.inner_container {
+  text-align: center;
+  box-shadow: 0px 0px 30px black;
+  position: relative;
+  background: #fd746c;
+  background: -webkit-linear-gradient(to right, #ff9068, #fd746c);
+  background: linear-gradient(to right, #ff9068, #fd746c);
+  border-radius: 8px;
+  padding: 10px;
+  width: 310px;
+}
+.header {
+  font-size: 45px;
+  font-family: fantasy;
+  letter-spacing: 10px;
+  margin-bottom: -10px;
+}
+.input_container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.output_container {
+  border-radius: 10px;
+  background-color: rgb(197, 197, 197);
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+}
+.output_selector_container {
+  color: tomato;
+}
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid black;
+  outline: none;
+  border-radius: 5px;
+  padding: 4px;
+  width: 10rem;
+  font-size: 2.2rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+#input1,
+#input1::placeholder {
+  color: white;
+}
+#input2,
+#input2::placeholder {
+  color: #ff9068;
+  position: relative;
+  transition: all;
+  transition-duration: 0.5s;
+}
+#input2:hover {
+  position: absolute;
+  width: 13rem;
+  top: 63%;
+  background-color: rgb(197, 197, 197);
+}
+.button_div {
+  cursor: pointer;
+  position: absolute;
+  top: 44.5%;
+  right: 20%;
+}
+.button_div button {
+  outline: none;
+  border: 2px solid black;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 3.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button_div button:hover {
+  color: rgb(78, 78, 78);
+  /* background-color:  black; */
+  box-shadow: 0px 0px 20px black;
+}
+.form-select {
+  background-color: rgba(255, 255, 255, 0);
+  width: 90%;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+}
+.head {
+  font-size: 230%;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 10px;
+  text-shadow: 3px 0px 3px black;
+}
+
+#Select_2 {
+  border: 2px solid #fd746c;
+}
+.option_1 {
+  background-color: black;
+  color: #fd746c;
+}
+.option_2 {
+  background-color: black;
+  color: rgb(197, 197, 197);
+}
+
+.navbar-brand {
+  font-size: 1rem;
+  font-family: sans-serif;
+  margin-right: 6rem;
+}
+.open-nav {
+  text-align: start;
+}
+.navbar-nav .nav-link {
+  padding-left: 10px;
+}
+.fa-ruler-vertical {
+  color: white;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 450px) {
+  .outer_container {
+    margin-top: 3rem;
+  }
+  .head {
+    margin-top: 1rem;
+  }
+}
